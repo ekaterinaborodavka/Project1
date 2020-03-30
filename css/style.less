@@ -1,0 +1,251 @@
+//compress:true;
+@import "vars";
+@import "mixins";
+
+@font-face{
+    font-family: 'Trade Winds';
+    src: url(../fonts/trade_winds/tradewinds-Regular.ttf);
+    src: url(../fonts/trade_winds/tradewinds.woff);
+    src: url(../fonts/trade_winds/tradewinds-Regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'Crimson Text';
+    src: url(../fonts/crimson_text/crimsontext-regular.ttf);
+    src: url(../fonts/crimson_text/crimsontext-regular.woff);
+    src: url(../fonts/crimson_text/crimsontext-regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family:'Crimson Text', serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.container{
+    max-width:1440px;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.wrapper_header{
+    .bg(@header_color);
+}
+.wrapper_footer{
+    .bg(@footer_color);
+}
+.wrapper_main{
+    .bg(@main_color);
+}
+.title,.nav_list,.tabs,.recipe,.about, .footer, .cont_list{
+    .flex;
+}
+.gallery-holder{ 
+    position: relative;
+    width: 100%;
+} 
+
+.prev, .next{
+    position: absolute; 
+    top:60%;         
+    z-index: 3; 
+} 
+
+.next{    
+ left: 85%;
+}
+.prev{    
+ left: 5%;
+}
+.gallery{   
+    width: 100%;    
+    position: relative;  
+    z-index: 1; 
+    overflow: hidden;
+    margin:2% 2% 0% 2%;
+    .padding;
+} 
+.gallery ul{    
+    width: 9999px; 
+} 
+.gallery ul li{  
+    float: left;  
+    max-width: 100%;
+    margin: 20px 120px;
+}
+
+.title{
+    margin:0 2%;
+    .padding;
+    justify-content: center;
+    .border_bottom;
+}
+h1, .nav{
+    width: 45%;
+    .bold;
+}
+.name, .lastname{
+    .size(2.5em);
+    font-family: 'Trade Winds', serif;
+    display: block;
+    width: 100%;
+}
+.lastname{
+    margin-left: 30%;
+}
+.nav_list{
+    justify-content: space-around;
+    .size(1.5em);
+    .margin;
+    .padding;
+}
+.top{
+    position: fixed;
+    bottom: 10%;
+    .border;
+    padding: 0.3%;
+    border-radius: 15%;
+}
+.top img{
+    max-width: 100%;
+}
+.item{
+    display: none;
+}
+.tab_active{
+    display:block;
+}
+.tabs{
+    justify-content: space-around;
+    .bold;
+    .size(1.2em);
+    .padding;
+    .border_top;
+}
+.tabs li{
+    .bg(@title_color);
+    padding:1%;
+    display: inline-block;
+    .border;
+    border-radius: 15%;
+    box-shadow: inset 2px 2px;
+    text-align: center;
+    width: 15%;
+    margin: 0 auto;
+}
+.tabs li:hover{
+    .bg(@lihover_color);
+    width: 17%;
+}
+.tab_img, .recipe_img, .icon{
+    max-width: 100%;
+    .padding;
+}
+
+.recipe{
+    .margin;
+}
+.recipe_title{
+    .bg(@title_color);
+    width: 100%;
+    .text_center;
+    .size(1.5em);
+    .border_top_bottom;
+    .padding;
+    .margin;
+    .bold;
+}
+.recipe_ingred{
+    .text_center;
+    .size(1.2em);
+    .padding;
+    .margin;
+    .bold;
+}
+
+.cooking, .ingred{
+    .padding;
+    .height_indent;
+}
+.ingred{
+    width: 40%;
+}
+.cooking{
+    width: 50%;
+}
+.about{
+  margin:2% 2% 0 2%; 
+}
+.about_title{
+    .bg(@title_color);
+    .text_center;
+    .size(1.5em);
+    .padding;
+    margin:2% 2% 0 2%;
+    .bold;
+    .border_top;
+    width: 100%;
+     .border_bottom;
+}
+.about_photo{
+    max-width: 100%;
+}
+.img_about{
+     margin:2% auto;
+}
+.about_quote{
+    text-align: right;
+    margin:0% 2%;
+}
+.about_item{
+   .padding;
+    .margin;
+}
+.about_par{
+    width: 95%;
+    margin: 0 auto;
+    .height_indent; 
+}
+.footer{
+     margin:0% 2%;
+    .border_top;
+}
+.contact,.webcontacts{
+    width: 45%;
+    .padding;
+    line-height: 1.5em;
+}
+.cont_name, .cont_link{
+   width: 45%; 
+    .padding;
+}
+.cont_name{
+   width: 20%;
+    .bold;
+}
+.webcontacts_list li{
+    .padding;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 20%;
+}
+.footer_quote, .about_quote{
+    .size(1.1em);
+    width: 100%;
+    .bold;
+    .padding;
+}
+.footer_quote{
+    .margin;
+    .height_indent;
+    .border_top_bottom;
+}
