@@ -27,13 +27,13 @@
     </nav>
    </div> 
    <div class="gallery_holder">
-       <a href="#" class="prev"><img src="img/left.png" alt="previos" class="prev"></a>
+       <a href="#" class="prev" ><img src="img/left.png" alt="previos" class="prev"></a>
        <a href="#" class="next"><img src="img/right.png" alt="next" class="prev"></a>
            <div class="gallery">
                <ul class="gallery_list">
-                   <li class="gallery_list_item first"><img src="img/img1.jpeg" alt="img1"></li>
-                   <li class="gallery_list_item"><img src="img/img2.jpg" alt="img2"></li>
-                   <li class="gallery_list_item"><img src="img/img3.jpg" alt="img3"></li>
+                   <li class="gallery_list_item"><img class="gallery_img gallery_active" src="img/img1.jpg" alt="img1"></li>
+                   <li class="gallery_list_item"><img class="gallery_img" src="img/img2.jpg" alt="img2"></li>
+                   <li class="gallery_list_item"><img class="gallery_img" src="img/img3.jpg" alt="img3"></li>
                </ul>
            </div>
    </div>
@@ -48,20 +48,20 @@
     <main class="main">
         <section class="tabcont">
             <ul class="tabs">
-                <li class="active tab"><a href="#dessert">
+                <li class="tab_active tab" data-tab-name="tab-1"><a href="#dessert">
                     <img src="img/dessert.png" alt="dessert" class="tab_img">Десерты</a>
                 </li>
-                <li class="tab"><a href="#baking">
+                <li class="tab" data-tab-name="tab-2"><a href="#baking">
                     <img src="img/baking.png" alt="baking" class="tab_img">Выпечка</a>
                 </li>
-                <li class="tab"><a href="#meat">
+                <li class="tab" data-tab-name="tab-3"><a href="#meat">
                     <img src="img/meat.png" alt="meat" class="tab_img">Мясо</a>
                 </li>
-                <li class="tab"><a href="#fish">
+                <li class="tab" data-tab-name="tab-4"><a href="#fish">
                     <img src="img/fish.png" alt="fish" class="tab_img">Рыба</a>
                 </li>
             </ul>
-            <div class="tab_active item" id="dessert">
+            <div class="tab_active item tab-1" id="dessert">
                   <div class="recipe">
                        <h2 class="recipe_title">Каталонский крем</h2>
                            <div class="ingred">
@@ -110,7 +110,7 @@
                            </div>
                     </div>
                 </div>
-                <div class="item" id="baking">
+                <div class="item tab-2" id="baking">
                     <div class="recipe">
                        <h2 class="recipe_title">Фокачча с пармезаном и розмарином</h2>
                            <div class="ingred">
@@ -136,11 +136,65 @@
                     </div>   
          
                 </div>
-                <div class="item" id="meat">
-          
+                <div class="item tab-3" id="meat">
+                    <div class="recipe">
+                       <h2 class="recipe_title">Говядина Веллингтон</h2>
+                           <div class="ingred">
+                               <h3 class="recipe_ingred"><img src="img/ingred.png" alt="ingred" class="recipe_img">Ингредиенты:</h3>
+                                   <ul class="ingred_list">
+                                       <li class="ingred_list_item">750 г говяжьего филе</li>
+                                       <li class="ingred_list_item">400 г шампиньонов</li>
+                                       <li class="ingred_list_item">6 ломтиков пармской ветчины</li>
+                                       <li class="ingred_list_item">1 ст. л. английской горчицы</li>
+                                       <li class="ingred_list_item">500 г готового пресного слоеного теста</li>
+                                       <li class="ingred_list_item">2 сырых желтка</li>
+                                       <li class="ingred_list_item">1 головка чеснока</li>
+                                       <li class="ingred_list_item">1 веточка свежего тимьяна</li>
+                                       <li class="ingred_list_item">Оливковое масло</li>
+                                       <li class="ingred_list_item">Соль</li>
+                                       <li class="ingred_list_item">Свежемолотый черный перец</li>
+                                   </ul>
+                           </div>
+                           <div class="cooking">
+                               <h3 class="recipe_ingred"><img src="img/spoon.png" alt="spoon" class="recipe_img">Приготовление:</h3>
+                    <p class="recipe_item">Нарежьте грибы, выложите их в кухонный комбайн с небольшим количеством приправы, взбейте все до однородной консистенции. Потом выложите грибную смесь на сильно разогретую сковороду. Готовьте ее в течение 10-ти минут, перемешивая, чтобы выпарить лишнюю жидкость на сильном огне. Нагрейте другую сковороду и добавьте немного оливкового масла. Приправьте говядину и обжаривайте ее на горячей сковороде в течение 30 секунд с каждой стороны.</p>
+                    <p class="recipe_item">После обжарки, по совету Рамзи, дайте говядине остыть, затем натрите всю ее поверхность горчицей. Положите на рабочую поверхность слой пищевой пленки и выложите внахлест пармскую ветчину. Далее при помощи лопаточки распределите грибную пасту на поверхности ветчины, затем выложите посередине обжаренное говяжье филе. Накройте пищевой пленкой говядину и аккуратно скатайте ее в виде рулета вместе с пленкой. Не снимая пищевую пленку отправьте говядину в холодильник на 15-20 минут, чтобы рулет смог зафиксировать форму.</p>
+                    <p class="recipe_item">Раскатайте пресное слоеное тесто в большой прямоугольник толщиной 2-3 мм. Снимите пищевую пленку с говядины, затем выложите ее в центр раскатанного теста. Вокруг мяса смажьте тесто яичным желтком. Заверните говядину в тесто, отрежьте его излишки. Переверните говядину в тесте швом вниз и выложите на противне. Отправьте противень в холодильник на 5-10 минут.</p>
+                    <p class="recipe_item">Смажьте все взбитым яичным желтком. Сделайте на тесте небольшие надрезы, расстояние между которыми составит не менее 1 см. Присыпьте сверху морской солью и выпекайте 20 минут в предварительно разогретой духовке до 200°C. По истечении времени снизьте температуру до 180°C и продолжайте запекать говядину в еще 15 минут.</p>
+                    <p class="recipe_item">После того как вы вынули из духовки говядину по-веллингтонски, дайте ей остыть в течение 10-15 минут, потом можно будет ее разрезать. Нарежьте блюдо на куски, мясо должно быть розовым в центре. Подавайте говядину Веллингтон с жареным картофелем и салатом.</p>
+                           </div>
+                    </div>
                 </div>
-                <div class="item" id="fish">
-          
+                <div class="item tab-4" id="fish">
+                    <div class="recipe">
+                       <h2 class="recipe_title">Биск из морского угря </h2>
+                           <div class="ingred">
+                               <h3 class="recipe_ingred"><img src="img/ingred.png" alt="ingred" class="recipe_img">Ингредиенты:</h3>
+                                   <ul class="ingred_list">
+                                       <li class="ingred_list_item">1 кг филе угря/li>
+                                       <li class="ingred_list_item">оливковое масло </li>
+                                       <li class="ingred_list_item">>1 луковица фенхеля, мелко нарезанная</li>
+                                       <li class="ingred_list_item">1 морковь, мелко нарезанная</li>
+                                       <li class="ingred_list_item">2 стебля сельдерея, мелко нарезанные</li>
+                                       <li class="ingred_list_item">1 лук-шалот, мелко нарезанный</li>
+                                       <li class="ingred_list_item">2 зубчика чеснока, измельченные</li>
+                                       <li class="ingred_list_item">2 звездчатого аниса</li>
+                                       <li class="ingred_list_item">1/8 чайной ложки кайенского перца</li>
+                                       <li class="ingred_list_item">1 чашка вермута Pernod или Noilly Prat</li>
+                                       <li class="ingred_list_item">1 большая картофелина, нарезанная кубиками</li>
+                                       <li class="ingred_list_item">5 сливовых помидоров, очищенных от семян</li>
+                                       <li class="ingred_list_item">4 стакана горячего рыбного бульона</li>
+                                       <li class="ingred_list_item">лимонный сок (по желанию)</li>
+                                   </ul>
+                           </div>
+                           <div class="cooking">
+                               <h3 class="recipe_ingred"><img src="img/spoon.png" alt="spoon" class="recipe_img">Приготовление:</h3>
+                    <p class="recipe_item">Филе угря приправить солью, перцем и шафраном, затем сбрызнуть небольшим количеством оливкового масла. Хорошо перемешайте, чтобы покрыть равномерно. Разогрейте тонкий слой оливкового масла в широкой сковороде. Филе угря обжаривать порциями на среднем огне по 2-3 минуты с каждой стороны. Переложите на тарелку и отставьте в сторону.</p>
+                    <p class="recipe_item">Добавьте немного масла в кастрюлю и добавьте фенхель, морковь, сельдерей, лук-шалот, чеснок, бадьян и кайенский перец. Готовить на среднем огне несколько минут, часто помешивая. Залить вермут и варить до тех пор, пока не получится сиропообразная консистенция. Добавьте картофель, помидоры и зелень, затем добавьте угря в кастрюлю. Налейте достаточно бульона, чтобы покрыть овощи и довести до кипения. Варить, пока картофель не станет очень мягким, 15-20 минут.</p>
+                    <p class="recipe_item">Удалите и выбросьте звездчатый анис. Порциями взбивайте суп до однородной массы, держа кухонное полотенце над блендером, чтобы избежать брызг горячего супа. Процедите суп через мелкое сито в чистую кастрюлю, придавливая, чтобы извлечь всю жидкость.</p>
+                    <p class="recipe_item">Верните суп на слабый огонь и разогрейте в течение нескольких минут. Попробуйте и отрегулируйте приправу, добавив лимонного сока, если это необходимо. Подавайте сразу.</p>
+                           </div>
+                    </div>
                 </div> 
         </section>
         <section class="about">
@@ -151,8 +205,8 @@
                <img src="img/gordon.jpeg" alt="gordon" class="about_photo">
             </div>
         <div class="about_item">
-           <p class="about_par">Гордон Джеймс Рамзи (Gordon James Ramsay) родился 8 ноября 1966 г. в городке Джонстоун в Шотландии. В возрасте 16 лет Гордон Рамзи покинул отчий дом и переехал на съемную квартиру в Банбери. В то время он уже начал интересоваться кулинарией. В 19 лет поступил в Технический колледж Северного Оксфордшира на факультет управления отельным бизнесом. Решение поступить в этот колледж было спонтанным. Постепенно юноша втянулся в кулинарию и стал изучать искусство приготовления пищи.</p>
-           <p class="about_par">Сейчас Гордон Рамзи по праву является одним из самых известных кулинаров на планете. Шотландский шеф-повар стал первым уроженцем Великобритании, который был удостоен трех звезд Мишлен. Его рестораны удостоены 16 звёзд Мишлен. Его фирменный ресторан Restaurant Gordon Ramsay, находящийся в Лондоне, имеет три звезды Мишлен. Популярный ведущий британских телешоу The F-Word, Ramsay’s Kitchen Nightmares и Адская кухня, а также их американских теле-близнецов.</p> 
+               <p class="about_par">Гордон Джеймс Рамзи (Gordon James Ramsay) родился 8 ноября 1966 г. в городке Джонстоун в Шотландии. В возрасте 16 лет Гордон Рамзи покинул отчий дом и переехал на съемную квартиру в Банбери. В то время он уже начал интересоваться кулинарией. В 19 лет поступил в Технический колледж Северного Оксфордшира на факультет управления отельным бизнесом. Решение поступить в этот колледж было спонтанным. Постепенно юноша втянулся в кулинарию и стал изучать искусство приготовления пищи.</p>
+               <p class="about_par">Сейчас Гордон Рамзи по праву является одним из самых известных кулинаров на планете. Шотландский шеф-повар стал первым уроженцем Великобритании, который был удостоен трех звезд Мишлен. Его рестораны удостоены 16 звёзд Мишлен. Его фирменный ресторан Restaurant Gordon Ramsay, находящийся в Лондоне, имеет три звезды Мишлен. Популярный ведущий британских телешоу The F-Word, Ramsay’s Kitchen Nightmares и Адская кухня, а также их американских теле-близнецов.</p> 
         </div>       
         </section>
     </main>
@@ -196,5 +250,6 @@
     </footer>
 </div>
 </div>
+ <script src="script.js"></script>
 </body>
 </html>

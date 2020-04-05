@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.height_indent {
+  line-height: 1.5em;
+  text-indent: 2.5em;
+}
+.margin {
+  margin: 2%;
+}
+.padding {
+  padding: 2%;
+}
+.text_center {
+  text-align: center;
+}
+.border_top_bottom {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.border_bottom {
+  border-bottom: 1px solid black;
+}
+.border_top {
+  border-top: 1px solid black;
+}
+.border {
+  border: 1px solid black;
+}
+.bold {
+  font-weight: bold;
+}
