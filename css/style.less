@@ -70,7 +70,6 @@ a{
     position: relative;  
     z-index: 1; 
     overflow: hidden;
-    margin:2% 2% 0% 2%;
     .padding;
 } 
 .gallery ul{    
@@ -88,7 +87,7 @@ a{
     opacity: 1;
 }
 .title{
-    margin:0 2%;
+    margin:0 auto;
     .padding;
     justify-content: center;
     .border_bottom;
@@ -118,6 +117,7 @@ h1, .nav{
     .border;
     padding: 0.3%;
     border-radius: 15%;
+    .bg(@main_color);
 }
 .top img{
     max-width: 100%;
@@ -137,7 +137,6 @@ h1, .nav{
 }
 .tabs li{
     .bg(@title_color);
-    padding:1%;
     display: inline-block;
     .border;
     border-radius: 15%;
@@ -148,7 +147,6 @@ h1, .nav{
 }
 .tabs li:hover{
     .bg(@lihover_color);
-    width: 17%;
 }
 .tab_img, .recipe_img, .icon{
     max-width: 100%;
@@ -172,7 +170,6 @@ h1, .nav{
     .text_center;
     .size(1.2em);
     .padding;
-    .margin;
     .bold;
 }
 
@@ -187,14 +184,14 @@ h1, .nav{
     width: 50%;
 }
 .about{
-  margin:2% 2% 0 2%; 
+  .padding; 
 }
 .about_title{
     .bg(@title_color);
     .text_center;
     .size(1.5em);
     .padding;
-    margin:2% 2% 0 2%;
+    margin: 0 2%;
     .bold;
     .border_top;
     width: 100%;
@@ -212,7 +209,6 @@ h1, .nav{
 }
 .about_item{
    .padding;
-    .margin;
 }
 .about_par{
     width: 95%;
@@ -220,11 +216,12 @@ h1, .nav{
     .height_indent; 
 }
 .footer{
-     margin:0% 2%;
+     margin:0 auto;
     .border_top;
 }
 .contact,.webcontacts{
     width: 45%;
+    margin:0 auto;
     .padding;
     line-height: 1.5em;
 }
@@ -250,7 +247,6 @@ h1, .nav{
     .padding;
 }
 .footer_quote{
-    .margin;
     .height_indent;
     .border_top_bottom;
 }
